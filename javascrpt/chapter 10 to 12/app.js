@@ -1,233 +1,202 @@
-var city = "karachi"
-var cityName = prompt("what is the city name")
-
-
-if(city == cityName){
-    console.log("Welcome to city of lights");
-
-
-}else{
-    console.log("Wrong ans");
+//question no 1:
+var city = prompt("ENTER CITY NAME!");
+if (city === "Karachi") {
+    document.write("<h2>WELCOME TO THE CITY OF LIGHTS!</h2>");
+    console.log(city);      
 }
 
-document.write("Welcome to city of lights <br><br>")
+//question no 2:
+var gender = prompt("GENDER:");
+var note = ("<p>We’re glad you’re here. This platform is designed to help you discover, learn, and grow.<br>Take your time exploring — your journey starts here!</p>");
 
-var gender = "Male"
-var genderName = prompt("what is the gender")
-
-
-if(gender == genderName){
-    console.log("Good Morning sir");
-
-    document.write("Good Morning sir <br><br>")
-
-
-}else{
-    console.log("Good Morning Maam");
-
-    document.write("Good Morning Maam <br><br>")
+if (gender == "male") {
+    document.write("<h2>Good Morning Sir!</h2>" + note);
+    console.log(gender);
+}
+else if (gender == "female") {
+    document.write("<h2>Good Morning Ma'am!</h2>" + note);
+    console.log(gender);
 }
 
-var signalColor = prompt("Enter signal color")
-
-if(signalColor == "Red"){
-    console.log("Must Stop")
-    document.write("Must Stop<br><br>")
-
-} else{
-    if(signalColor == "Yellow"){
-        console.log("Ready to move")
-        document.write("Ready to move<br><br>")
-    } else{
-        if(signalColor == "Green"){
-           console.log("Move now")
-           document.writeln("Move now<br><br>")
-        }
-    }
+//question no 3:
+var color = prompt("Enter color of road traffic signal!");
+if (color == "red") {
+    document.write("<h2>Must stop!</h2>");
+    console.log(color); 
+}
+else if (color == "yellow") {
+    document.write("<h2>Ready to move!</h2>");
+    console.log(color); 
+}
+else if (color == "green") {
+    document.write("<h2>Move now!</h2>");
+    console.log(color);    
 }
 
-var fuel = prompt("Enter a remaining fuel")
-
-if(fuel < 0.25){
-    console.log("Please refill the fuel in your Car")
-    document.write("Please refill the fuel in your Car<br><br>")
-
-}else{
-    console.log("your car fuel is greator than 0.25 liters")
-    document.write("your car fuel is greator than 0.25 liters")
+//question no 4:
+var fuel = prompt("Remaining fuel in car (in litres)");
+if (fuel == "0.25 litres") {
+    document.write("<h2>Please refill the fuel in your car!</h2>");
+    console.log(fuel);    
 }
 
+//question no 5:
 var a = 4;
-if(++a === 5){
-alert("given condition for variable a is true");
-document.write("given condition for variable a is true")
-}    
+if (++a === 5) {
+    alert("given condition for variable a is true");                      
+    console.log(a);
+}
 
 var b = 82;
-if(b++ === 83){
-alert("given condition for variable b is true");
-document.write("given condition for variable b is False<br><br>")
-}    
+if (b++ === 83) {
+    alert("given condition for variable b is true");                     
+    console.log(b);
+}
 
 var c = 12;
-if(c++ === 13){
-alert("condition 1 is true");
+if (c++ === 13) {
+    alert("Condition 1 is true");                                        
+    console.log(c);
 }
-if(c === 13){
-    alert("condition 2 is true");
-    document.write("Condition 2 is true<br><br>")
+else if (c === 13) {
+    alert("Condition 2 is true");                                      
+    console.log(c);
 }
-if(++c < 14){
-    alert("condition 3 is true");
+else if (++c < 14) {
+    alert("Condition 3 is true");                                      
+    console.log(c);
 }
-if(c === 14){
-    alert("condition 4 is true");
-     document.write("Condition 4 is true<br><br>")
+else if (c === 14) {
+    alert("Condition 4 is true");                                    
+    console.log(c);
 }
 
 var materialCost = 20000;
-var laborCost  = 2000;
-var totalCost = materialCost + laborCost;
-if(totalCost === laborCost + materialCost){
-    alert("The cost Equals");
-    document.write("Cost are equals<br><br>")
+var labourCost = 2000;
+var totalCost = materialCost + labourCost;
+
+if (totalCost === labourCost + materialCost) {                        
+    alert("The cost equals");
+    console.log(totalCost);
 }
 
-
-if(true){
-    alert("True");
-    document.write("True<br><br>")
-}
-if(false){
-    alert("False");
+if (true) {
+    alert("true");
+    console.log(true);
 }
 
-if("car" < "cat"){
-    alert("car is smaller than cat");
-    document.write("car is smaller than cat")
+if (false) {
+    alert("false");
+    console.log(false);
 }
 
+if ("car" < "cat") {
+    alert("Car is smaller than cat");                                  
+    console.log("Car is smaller than cat");
+}
 
+// question no 6:
+var sub1 = +prompt("Enter marks of subject 1");
+var sub2 = +prompt("Enter marks of subject 2");
+var sub3 = +prompt("Enter marks of subject 3");
 
-var sub1 = +prompt("Enter marks of sub1")
-var sub2 = +prompt("Enter marks of sub2")
-var sub3 = +prompt("Enter marks of sub3")
-var totalMarks = +prompt("Enter total marks")
-
+var totalMarks = 300;
 var obtainedMarks = sub1 + sub2 + sub3;
 var percentage = (obtainedMarks / totalMarks) * 100;
- 
-var grade, Remarks;
 
-if (percentage >= 80) {
-    console.log("Excellent");
-    console.log("A-one");
+var Grade, Remarks;
+
+if (percentage > 80) {
+    Grade = "A-one"; 
+    Remarks = "Excellent";
+}
+else if (percentage > 70) {
+    Grade = "A"; 
+    Remarks = "Good";
+}
+else if (percentage > 60) {
+    Grade = "B"; 
+    Remarks = "You need to improve!";
+}
+else {
+    Grade = "Fail"; 
+    Remarks = "Sorry!";
+}
+
+document.write("<h1>Marks Sheet</h1>");
+document.write("<b>Total Marks : " + totalMarks + "<br></b>");
+document.write("<b>Marks Obtained : " + obtainedMarks + "<br></b>");
+document.write("<b>Percentage : " + percentage + "%<br></b>");
+document.write("<b>Grade : " + Grade + "<br></b>");
+document.write("<b>Remarks : " + Remarks + "</b>");
+
+// question no 7:
+var secretNum = 7;
+var userGuess = +prompt("Guess the secret number (1 to 10)");
+
+if (userGuess === secretNum) {
+    alert("Bingo! Correct answer");
+}
+if (userGuess + 1 === secretNum) {
+    alert("Close enough to the correct answer");
+} else { 
+    alert("Try again!");
+}
+
+// question no 8:
+var weather = +prompt("Check Weather");
+var finalWeather = weather / 3;
+alert("Today weather is " + finalWeather);
+
+// question no 9:
+var num = +prompt("Enter a number:");
+if (num % 2 === 0) {
+    alert("The number is Even");
 } else {
-    if (percentage >= 70) {
-        console.log("A");
-        console.log("Good");
-    } else {
-        if (percentage >= 60) {
-            console.log("B");
-            console.log("You need to improve");
-        } else {
-            console.log("Fail");
-            console.log("Sorry");
-        }
-    }
+    alert("The number is Odd");
 }
 
- document.write("<h2>Marks Sheet</h2>");
-    document.write("Total Marks : " + totalMarks + "<br>");
-    document.write("Marks Obtained : " + obtainedMarks + "<br>");
-    document.write("Percentage : " + percentage + "%<br>");
-    document.write("Grade : " + grade + "<br>");
-    document.write("Remarks : " + Remarks);
-
-
-
-var secretNumber = 7;
-var userGuess = +prompt("Guess the secret num (1 to 10)")    
-
-if(userGuess == secretNumber){
-    console.log("Bingo! correct answer")
-}else{
-    if(userGuess + 1 == secretNumber){
-        console.log("Close enough to the correct answer")
-    }
-    else {
-        console.log("Wrong guess!");
-    }
+// question no 10:
+var temperature = +prompt("Enter today's temperature");
+if (temperature > 40) {
+    alert("It is too hot outside.");
+}
+else if (temperature > 30) {
+    alert("The weather today is normal.");
+}
+else if (temperature > 20) {
+    alert("Today's weather is cool.");
+}
+else if (temperature > 10) {
+    alert("OMG! Today's weather is so cool.");
+} else {
+    alert("It's very cold today");
 }
 
-var num = +prompt("Enter a num that is divisible by 3")
+// question no 11:
+var firstNum = +prompt("Enter first number");
+var secondNum = +prompt("Enter second number");
+var operation = prompt("Enter operation like (+,-,*,/,% )");
 
-if(num % 3 === 0){
-    console.log("Number is divisible by 3")
-}else{
-    console.log("Num is not divisible by 3")
+var result;
+
+if (operation === "+") {
+    result = firstNum + secondNum;
+}
+else if (operation === "-") {
+    result = firstNum - secondNum;
+}
+else if (operation === "*") {
+    result = firstNum * secondNum;
+}
+else if (operation === "/") {
+    result = firstNum / secondNum;
+}
+else if (operation === "%") {
+    result = firstNum % secondNum;
+} else {
+    alert("Invalid operator");
 }
 
+alert("Result : " + result);
 
-var number = +prompt("Enter a num ")
-
-if(num % 2 === 0){
-    console.log("Number is Even")
-}else{
-    console.log("Num is not Odd")
-}
-
-var temp = +prompt("Enter Temprature")
- 
-if(temp>40){
-    console.log("It is too hot outside")
-}else{
-    if(temp>30){
-        console.log("The weather today is normal")
-    }
-    else{
-        if(temp>20){
-            console.log("Today's weather is cool")
-        }
-        else{
-            if(temp>10){
-            console.log("OMG! Today's weather is so cool")
-            }
-        else {
-                console.log("It's very cold.");
-            }
-        }
-    }
-}
-
-
-var num1 = +prompt("Enter First Num")
-var num2 = +prompt("Enter second Num")
-var operator = prompt("Enter operator (+, -, *, /, %)")
-
-if(operator == "+"){
-    console.log(num1 + num2)
-
-}else{
-    if(operator == "-"){
-        console.log(num1 - num2)
-}
-else{
-    if(operator == "*"){
-        console.log(num1 * num2)
-    }
-    else{
-        if(operator == "/"){
-            console.log(num1 / num2)
-        }
-        else{
-            if(operator == "%"){
-                console.log(num1 % num2)
-            }
-            else{
-                console.log("invalid operator")
-            }
-        }
-    }
-}
-}
