@@ -82,4 +82,60 @@ colors.pop();
 console.log("After pop: " + colors);
 document.write("After deleting last color: " + colors + "<br><br>");
 
+//ask the user at which index he /she wants to add a color and color name then add the color to desired position/index . display the updated array in your browser .//
+var index = +prompt("At which index do you want to add the color?")
+var colorName = prompt("Enter the color name")
+colors.splice(index, 0 , colorName);
+
+console.log("Updated Array: " + colors);
+document.write("Updated Array: " + colors +"<br><br>");
+
+
+
+//ask the user at which index he /she wants to delete colors,and how many color he she want to delete then remove the same number of color from user defined position index display the updated array in your browser//
+
+var index = +prompt("At which index do you want to delete the color?")
+var deletecount = prompt("How many colors you want to delete")
+colors.splice(index, deletecount);
+document.write("Updated Array: " + colors + "<br><br>");
+console.log("Updated Array:", colors);
+
+
+var stuScores = ["320" , "230", "480" , "120"]
+console.log(stuScores.sort());
+
+
+//write an array to initialize an array with city name , copy 3 array elements from cities array to selectedcitites array .//
+var cities = ["karachi","lahore","islamabad","Quetta","peshawar"]
+
+var selectedcities = cities.slice(2,4)
+console.log(cities)
+console.log(selectedcities)
+document.write("Cities List: " + cities + "<br><br>")
+document.write("Selected Cities List: " + selectedcities)
+
+
+//write a program to create a single string from the below mentioned array://
+//var arr = [""This", "is", "my", "cat""]//
+var cat = ["This", "is", "my", "cat"]
+console.log(cat.join(" "))
+
+
+
+//Create a new array, store value one by one in such a way that you can access the value in the order in which they were stored. (First In First Out)
+var queue = [];
+
+queue.unshift("A");
+queue.unshift("B");
+queue.unshift("C");
+
+console.log("Queue after inserting values: " + queue)
+document.write("Queue after inserting values: " + queue + "<br><br>");
+
+var firstOut = queue.shift();
+
+console.log("First Out Value: " + firstOut)
+console.log("Remaining Queue: " + queue)
+document.write("First Out Value: " + firstOut + "<br><br>");
+document.write("Remaining Queue: " + queue);
 
