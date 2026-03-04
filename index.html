@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="container">
+        <form>
+            <h2>Signup Form</h2>
+
+            <label>Name:</label>
+            <input type="text" id="name">
+
+            <label>Father Name:</label>
+            <input type="text" id="fatherName">
+
+            <label>Email:</label>
+            <input type="email" id="email">
+
+            <label>Number:</label>
+            <input type="number" id="no">
+
+            <button type="button" onclick="submitData()">Submit</button>
+        </form>
+    </div>
+
+    <h1>Data</h1>
+    <p id="para">para</p>
+
+    <p id="paraText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span id="remaining" style="display: none;">
+            Corporis ratione voluptates obcaecati magnam reprehenderit hic amet.
+        </span>
+    </p>
+
+    <a href="#" id="link" onclick="toggleText()">See more</a>
+
     <script src="app.js"></script>
-    
+
 </body>
 </html>
